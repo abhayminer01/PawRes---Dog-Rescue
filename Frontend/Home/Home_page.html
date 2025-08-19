@@ -154,10 +154,15 @@
                         <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button type="button">Sign Up</button>
+                    
+                    <input type="text" placeholder="Name" id="regName" />
+                    <input type="email" placeholder="Email" id="regEmail"/>
+                    <input type="password" placeholder="Password" id="regPassword"/>
+                    
+                    <!-- ✅ Error message placeholder -->
+                    <p id="registerError" style="color:red; display:none; font-size:14px; margin-top:6px;"></p>
+                    
+                    <button type="button" onclick="handleRegister()">Sign Up</button>
                 </form>
             </div>
 
@@ -171,10 +176,11 @@
                         <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your email password</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="email" placeholder="Email" id="email"/>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <p id="loginError" style="color:red; display:none; font-size:14px; margin-top:6px;"></p>
                     <a href="#">Forget Your Password?</a>
-                    <button type="button">Sign In</button>
+                    <button type="button" onclick="handleLogin()">Sign In</button>
                 </form>
             </div>
 
